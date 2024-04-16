@@ -41,14 +41,15 @@ Once it's done, eject the SD card from our computer. Plug it into the Miyoo Mini
 After the installation is complete, install emulators and apps in the package manager:
 
 - NEC - TurboGrafx-16
+- Nintendo - DS
 - Nintendo - GBA
 - Nintendo - Game Boy Color
 - Nintendo - NES
 - Nintendo - SNES
 - Sega - Genesis
 - Sega - Master System
-- Sega CD
-- Sega Game Gear
+- Sega - CD
+- Sega - Game Gear
 
 Press START to install. Then shut down the device, eject the SD card, and put it back into the computer.
 
@@ -57,7 +58,7 @@ Press START to install. Then shut down the device, eject the SD card, and put it
 Move the following BIOS files to the `\BIOS` folder:
 
 - SEGA CD: `bios_CD_E.bin`, `bios_CD_J.bin`, `bios_CD_U.bin`
-- Sega Game Geaqr: `bios.gg`
+- Sega Game Gear: `bios.gg`
 - Game Boy: `gb_bios.bin`
 - Game Boy Advance: `gba_bios.bin`
 - Game Boy Color: `gbc_bios.bin`
@@ -77,6 +78,7 @@ Move the ROM files to the subfolders within the `\Roms` folder:
 - Sega Game Gear: `GG`
 - Sega Genesis: `MD`
 - Sega - Master System: `MS`
+- NDS: `NDS`
 - Neo Geo: `NEOGEO`
 - TurboGrafx-16: `PCE`
 - PlayStation: `PS`
