@@ -47,6 +47,7 @@ After the installation is complete, install emulators and apps in the package ma
 - Nintendo - SNES
 - Sega - Genesis
 - Sega - Master System
+- Sega CD
 
 Press START to install. Then shut down the device, eject the SD card, and put it back into the computer.
 
@@ -76,6 +77,7 @@ Move the ROM files to the subfolders within the `\Roms` folder:
 - Neo Geo: `NEOGEO`
 - TurboGrafx-16: `PCE`
 - PlayStation: `PS`
+- Sega CD: `SEGACD`
 - SNES: `SFC`
 
 More information please check the [Onion Docs](https://onionui.github.io/docs/emulators/nes)!
