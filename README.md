@@ -48,6 +48,7 @@ After the installation is complete, install emulators and apps in the package ma
 - Sega - Genesis
 - Sega - Master System
 - Sega CD
+- Sega Game Gear
 
 Press START to install. Then shut down the device, eject the SD card, and put it back into the computer.
 
@@ -56,6 +57,7 @@ Press START to install. Then shut down the device, eject the SD card, and put it
 Move the following BIOS files to the `\BIOS` folder:
 
 - SEGA CD: `bios_CD_E.bin`, `bios_CD_J.bin`, `bios_CD_U.bin`
+- Sega Game Geaqr: `bios.gg`
 - Game Boy: `gb_bios.bin`
 - Game Boy Advance: `gba_bios.bin`
 - Game Boy Color: `gbc_bios.bin`
@@ -72,6 +74,7 @@ Move the ROM files to the subfolders within the `\Roms` folder:
 - Game Boy: `GB`
 - Game Boy Advance: `GBA`
 - Game Boy Color: `GBC`
+- Sega Game Gear: `GG`
 - Sega Genesis: `MD`
 - Sega - Master System: `MS`
 - Neo Geo: `NEOGEO`
