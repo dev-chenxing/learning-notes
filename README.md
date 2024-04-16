@@ -79,3 +79,11 @@ Move the ROM files to the subfolders within the `\Roms` folder:
 - SNES: `SFC`
 
 More information please check the [Onion Docs](https://onionui.github.io/docs/emulators/nes)!
+
+### Install Themes and Icons
+
+Themes and icon packs can be downloaded from [here](https://github.com/OnionUI/Themes/blob/main/README.md).
+
+Unzip the downloaded theme to the `/Themes` folder and apply it with the ThemeSwitcher app.
+
+Unzip the downloaded icon pack to the `/Icons` folder. To install the icon pack, use the Tweaks app, 'Apperance' -> 'Icons packs...' -> 'Apply icon pack...'.
