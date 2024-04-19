@@ -4,7 +4,7 @@
 -   [Create React Project with Vite](#Create-React-Project-with-Vite)
 -   [Miyoo Mini Plus Starter Guide](#Miyoo-Mini-Plus-Starter-Guide)
 -   [Scrapy - Python Web Scraping](#Scrapy---Python-Web-Scraping)
--   [Create Word Files with Python](#Create-Word-Files-with-Python)
+-   [Create Word Documents with Python: python-docx](#Create-Word-Documents-with-Python)
 
 ## Install Node.js
 
@@ -144,7 +144,7 @@ Here, `example` would be the name of the spider, and `example.com` would be the 
 scrapy crawl example
 ```
 
-## Create Word Files with Python
+## Create Word Documents with Python: python-docx
 
 Last Updated: 2024/4/19
 
