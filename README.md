@@ -146,7 +146,7 @@ Last Updated: 2024/4/18
 
 | Color                                                                                      | Name            | Hex     |
 | ------------------------------------------------------------------------------------------ | --------------- | ------- |
-| ![](https://github.com/amaliegay/learning-notes/blob/main/assets/color/Pink.svg)           | Pink            | #FFC0CB |
+| ![](https://raw.githubusercontent.com/amaliegay/learning-notes/main/assets/color/Pink.svg) | Pink            | #FFC0CB |
 | <svg width="180" height="24"><rect width="180" height="24" fill="LightPink" /></svg>       | LightPink       | #FFB6C1 |
 | <svg width="180" height="24"><rect width="180" height="24" fill="HotPink" /></svg>         | HotPink         | #FF69B4 |
 | <svg width="180" height="24"><rect width="180" height="24" fill="DeepPink" /></svg>        | DeepPink        | #FF1493 |
