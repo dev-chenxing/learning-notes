@@ -4,6 +4,7 @@
 -   [Create React Project with Vite](#CreateReactProjectwithVite)
 -   [Miyoo Mini Plus Starter Guide](#MiyooMiniPlusStarterGuide)
 -   [Scrapy - Python Web Scraping](#Scrapy-PythonWebScraping)
+-   [Create Word Files with Python](#CreateWordFileswithPython)
 
 ## Install Node.js
 
@@ -141,6 +142,56 @@ Here, `example` would be the name of the spider, and `example.com` would be the 
 
 ```powershell
 scrapy crawl example
+```
+
+## Create Word Files with Python
+
+Last Updated: 2024/4/19
+
+Install the [python-docx](https://python-docx.readthedocs.io/en/latest/) package
+
+```powershell
+pip install python-docx
+```
+
+Here is an example of what `python-docx` can do:
+
+```python
+from docx import Document
+from docx.shared import Pt, Cm, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+
+def set_doc_style(doc):
+    section = doc.sections[0]
+    section.left_margin, section.right_margin = Cm(2), Cm(2) # set document margin to 2 cm
+
+    normal_style = doc.styles["Normal"]
+    normal_font = normal_style.font
+    normal_font.name = "Helvetica"                           # set document font family for English text
+    normal_font.name = "Microsoft YaHei"                     # set document font family for Chinese text
+    normal_font.size = Pt(12)                                # set document font size to 12pt
+    normal_paragraph_format = normal_style.paragraph_format   
+    normal_paragraph_format.line_spacing = Pt(14)            # set document line spacing to 14pt
+
+file_name = "Lorem Ipsum"
+directory = "."
+
+doc = Document()    # create the document
+set_doc_style(doc)  # set the document style
+
+center_paragraph = doc.add_paragraph("Lorem ipsum")
+center_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER  # add a center paragraph
+
+doc.add_paragraph("Lorem ipsum dolor sit amet, ")                   # add a plain paragraph
+
+red_paragraph = doc.add_paragraph("consectetur adipiscing elit, ")
+red_paragraph.runs[0].font.color.rgb = RGBColor(0xFF, 0x00, 0x00)   # add a paragraph with color red
+
+blue_paragraph = doc.add_paragraph("sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ")
+blue_paragraph.runs[0].font.color.rgb = RGBColor(0x00, 0x00, 0xFF)  # add a paragraph with color blue
+
+output_path = f"{directory}{file_name}.docx"
+doc.save(output_path)  # save the document to the output path
 ```
 
 [⬆️ Back to the Top](#📝-programming-guide-and-learning-notes)
