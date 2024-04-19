@@ -144,14 +144,14 @@ Last Updated: 2024/4/18
 
 #### Pink
 
-| Color                                                                                               | Name            | Hex     |
-| --------------------------------------------------------------------------------------------------- | --------------- | ------- |
-| <img src="https://raw.githubusercontent.com/amaliegay/learning-notes/main/assets/color/Pink.svg" /> | Pink            | #FFC0CB |
-| <svg width="180" height="24"><rect width="180" height="24" fill="LightPink" /></svg>                | LightPink       | #FFB6C1 |
-| <svg width="180" height="24"><rect width="180" height="24" fill="HotPink" /></svg>                  | HotPink         | #FF69B4 |
-| <svg width="180" height="24"><rect width="180" height="24" fill="DeepPink" /></svg>                 | DeepPink        | #FF1493 |
-| <svg width="180" height="24"><rect width="180" height="24" fill="PaleVioletRed" /></svg>            | PaleVioletRed   | #DB7093 |
-| <svg width="180" height="24"><rect width="180" height="24" fill="MediumVioletRed" /></svg>          | MediumVioletRed | #C71585 |
+| Color                                                                                      | Name            | Hex     |
+| ------------------------------------------------------------------------------------------ | --------------- | ------- |
+| ![](https://raw.githubusercontent.com/amaliegay/learning-notes/main/assets/color/Pink.svg) | Pink            | #FFC0CB |
+| <svg width="180" height="24"><rect width="180" height="24" fill="LightPink" /></svg>       | LightPink       | #FFB6C1 |
+| <svg width="180" height="24"><rect width="180" height="24" fill="HotPink" /></svg>         | HotPink         | #FF69B4 |
+| <svg width="180" height="24"><rect width="180" height="24" fill="DeepPink" /></svg>        | DeepPink        | #FF1493 |
+| <svg width="180" height="24"><rect width="180" height="24" fill="PaleVioletRed" /></svg>   | PaleVioletRed   | #DB7093 |
+| <svg width="180" height="24"><rect width="180" height="24" fill="MediumVioletRed" /></svg> | MediumVioletRed | #C71585 |
 
 #### Purple
 
