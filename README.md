@@ -4,7 +4,7 @@
 -   [Create React Project with Vite](#Create-React-Project-with-Vite)
 -   [Miyoo Mini Plus Starter Guide](#Miyoo-Mini-Plus-Starter-Guide)
 -   [Scrapy - Python Web Scraping](#Scrapy---Python-Web-Scraping)
--   [Create Word Documents with Python: python-docx](#Create-Word-Documents-with-Python)
+-   [Create Word Documents with Python: python-docx](#create-word-documents-with-python-python-docx)
 
 ## Install Node.js
 
