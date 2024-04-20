@@ -1,11 +1,11 @@
-# 📝 Programming Guide and Learning Notes
+# 📝 Programming Guides and Learning Notes
 
--   [Install Node.js](#Install-Nodejs)
--   [Create React Project with Vite](#Create-React-Project-with-Vite)
--   [Miyoo Mini Plus Starter Guide](#Miyoo-Mini-Plus-Starter-Guide)
--   [Scrapy - Python Web Scraping](#Scrapy---Python-Web-Scraping)
--   [Create Word Documents with Python: python-docx](#create-word-documents-with-python-python-docx)
--   [Beautiful Python Terminal Styling with Rich](#Beautiful-Python-Terminal-Styling-with-Rich)
+- [Install Node.js](#install-nodejs)
+- [Create React Project with Vite](#create-react-project-with-vite)
+- [Miyoo Mini Plus Starter Guide](#miyoo-mini-plus-starter-guide)
+- [Scrapy - Python Web Scraping](#scrapy---python-web-scraping)
+- [Create Word Documents with Python: python-docx](#create-word-documents-with-python-python-docx)
+- [Beautiful Python Terminal Styling with Rich](#beautiful-python-terminal-styling-with-rich)
 
 ## Install Node.js
 
