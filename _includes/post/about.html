@@ -1,6 +1,9 @@
 <div class="about">
     <div class="about__text">
-        Written by <strong class="typewriter"> {% if page.author.fullname %} {{ page.author.fullname }} {% else %} {{ site.author.fullname }} {% endif %}</strong>
-        on <strong>{{ page.date | date: "%d %B %Y" }}</strong><br>
+        Written by
+        <strong class="typewriter">{% if page.author.fullname %}{{ page.author.fullname }}{% else %}{{
+            site.author.fullname }}{% endif %}</strong>
+        on
+        <strong>{{ page.date | date: "%d %B %Y" }}</strong>
     </div>
 </div>

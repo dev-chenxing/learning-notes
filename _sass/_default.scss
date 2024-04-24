@@ -49,7 +49,7 @@ blockquote {
 
   cite {
     &:before {
-      content: "，"
+      content: "，";
     }
   }
 
@@ -67,6 +67,7 @@ blockquote {
 
 strong {
   color: $iron;
+  margin: 0 5px;
 }
 
 /* =Header */
@@ -76,45 +77,15 @@ strong {
 }
 
 .logo {
-  font-family: "Special Elite", cursive;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
   color: $iron;
-  display: block;
-}
-
-.menu {
-  color: $cloudy;
-  font-size: 18px;
-  margin: 0px;
-  margin-top: 6px;
-  padding: 0px;
-  list-style-type: none;
-}
-
-.menu__entry {
-  display: inline-block;
-  margin-right: 35px;
-
-  &:last-child {
-    margin-right: 0px;
-  }
-}
-
-.menu__entry a {
-  font-weight: 400;
 }
 
 .social-links {
-  float: right;
-  font-size: 24px;
-  color: $cloudy;
-  list-style-type: none;
-}
-
-.social-links__entry {
-  display: inline-block;
-  margin-left: 10px;
+  font-size: 1.25rem;
+  margin-top: 6px;
+  padding: 0px;
 }
 
 /* =Titles */
@@ -122,28 +93,12 @@ strong {
   text-align: center;
 }
 
-.page-title__text {
-  font-weight: 700;
-  font-size: 70px;
-}
-
-.page-title__subtitle {
-  font-weight: 400;
-  font-size: 22px;
-  color: $cloudy;
-  font-family: Marvel;
-}
-
 .post-title {
   margin-bottom: 90px;
 }
 
 .post-title__text {
-  font-size: 40px;
-}
-
-.post-title__subtitle {
-  font-size: 20px;
+  font-size: 2.5rem;
 }
 
 /* =Post teasers */
