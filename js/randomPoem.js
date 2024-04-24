@@ -2,7 +2,7 @@ function randomChoice(array) {
     return array[(Math.floor(Math.random() * array.length))]
 }
 
-fetch("./py/gushiwen_short.json")
+fetch("py/gushiwen_short.json")
     .then((response) => response.json())
     .then((data) => randomChoice(data))
     .then((poem) => {
