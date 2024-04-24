@@ -1,0 +1,23 @@
+---
+layout: page
+---
+
+<ul class="list-posts">
+    {% for post in site.posts %}
+    <li class="post-teaser">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <span class="post-teaser__title">· {{ post.title }}</span>
+            <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }} ·</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<blockquote>
+    <p id="poem-content"></p>
+    <footer id="poem-author">
+        <cite id="poem-title"></cite>
+    </footer>
+</blockquote>
+
+<script src="js/randomPoem.js"></script>

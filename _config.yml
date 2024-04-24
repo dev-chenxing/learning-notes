@@ -1,0 +1,22 @@
+# Site settings
+title: Learning Notes
+description: "Programming guides and learning notes, web scraping, frontend development, handheld gaming, etc."
+baseurl: "/learning-notes" # the subpath of your site, e.g. /blog/
+url: "https://amaliegay.github.io" # the base hostname & protocol for your site
+enforce_ssl: amaliegay.github.io
+
+author:
+  fullname: amaliegay
+  github: amaliegay
+
+# Syntax highlighting
+highlightstyle: 'xcode'
+styles: [default, github, xcode]
+
+# Handling Reading
+exclude: ["README.md", "venv"]
+
+# Build settings
+markdown: kramdown
+highlighter: rogue
+
