@@ -4,13 +4,15 @@
             <a href="{{ site.baseurl }}/" class="logo typewriter">
                 {{ site.title }}
             </a>
-            <ul class="social-links">
-                {% if site.author.github %}
-                <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
-                    <i class="fa fa-github"> chen.xing </i>
-                </a>
-                {% endif %}
-            </ul>
+            <div class="social-links">
+                <ul>
+                    {% if site.author.github %}
+                    <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
+                        <i class="fa fa-github"> chen.xing </i>
+                    </a>
+                    {% endif %}
+                </ul>
+            </div>
         </center>
         <br />
     </div>

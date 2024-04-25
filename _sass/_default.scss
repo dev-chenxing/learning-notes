@@ -9,7 +9,7 @@ html {
 body {
   font-family: "EB Garamond", serif;
   color: $iron;
-  background-color: #ffffff;
+  background-color: white;
   margin: 4em;
 }
 
@@ -29,7 +29,7 @@ code {
 
 img {
   width: 100%;
-  border: 1px solid #1c1f33;
+  border: 1px solid $steel;
 }
 
 blockquote {
@@ -43,7 +43,7 @@ blockquote {
     margin-top: 10px;
     font-style: italic;
     font-size: 1rem;
-    color: #898989;
+    color: $cloudy;
     letter-spacing: 0px;
     text-align: right;
     &:before {
@@ -87,9 +87,33 @@ strong {
 }
 
 .social-links {
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   margin-top: 6px;
-  padding: 0px;
+  padding: 3px 0;
+  border: solid $steel;
+  border-width: 2px 0;
+  text-transform: lowercase;
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    border: solid $steel;
+    border-width: 1px 0;
+  }
+
+  & .fa {
+    color: maroon;
+    font-family: "EB Garamond", sans-serif;
+    font-size: 1.5rem;
+
+    &::before {
+      font-family: FontAwesome;
+    }
+  }
+}
+
+.social-links__entry {
+  padding: 8px;
 }
 
 /* =Titles */
@@ -141,6 +165,10 @@ strong {
 
 .about__text {
   font-size: 1.3rem;
+}
+
+.footer {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 800px) {
