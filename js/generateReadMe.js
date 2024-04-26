@@ -64,7 +64,7 @@ const generateReadme = () => {
     content += "\n\n";
   }
 
-  content += "[⬆️ Back to the Top](#-programming-guide-and-learning-notes)";
+  content += "[⬆️ Back to the Top](#-programming-guides-and-learning-notes)";
 
   fs.writeFileSync(fileName, content);
 };
