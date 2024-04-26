@@ -23,7 +23,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             - run: npm install --if-present
             - name: Run generateReadMe.js
-              run: npm generateReadMe
+              run: npm run generateReadMe
             - name: Commit and push if it changed
               run: |-
                   git config user.name "chen.xing"
