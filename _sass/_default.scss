@@ -146,6 +146,15 @@ strong {
     align-items: center;
     justify-content: space-between;
   }
+  &:hover {
+    background-color: $steel;
+  }
+  &:hover .post-teaser__title {
+    color: white;
+  }
+  &:hover .post-teaser__date {
+    color: white;
+  }
 }
 
 .post-teaser__title {
