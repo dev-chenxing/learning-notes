@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Install Node.js"
+title: "Install Node.js"
 date: 2024-04-13
 permalink: "Nodejs"
 ---

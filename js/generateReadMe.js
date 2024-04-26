@@ -1,37 +1,31 @@
+const { timeLog } = require("console");
 const fs = require("fs");
 
-path = "_posts/";
-const posts = [];
+const path = "_posts/";
 
 const getPost = (file) => {
-  fs.readFile(path + file, "utf8", (err, data) => {
-    if (err) console.log(err);
-    else {
-      const titleStartIndex = data.indexOf("title:") + 7;
-      const titleEndIndex = data.indexOf("date:") - 1;
-      const title = data.substring(titleStartIndex, titleEndIndex);
+  const data = fs.readFileSync(path + file, 'utf8');
 
-      const contentStartIndex = data.indexOf("---", 2) + 3;
-      const content = data.substring(contentStartIndex, data.length);
+  const titleStartIndex = data.indexOf("title:") + 8;
+  const titleEndIndex = data.indexOf("date:") - 2;
+  const title = data.substring(titleStartIndex, titleEndIndex);
 
-      const post = {
-        title: title,
-        content: content,
-      };
-      return post;
-    }
-  });
-};
+  const contentStartIndex = data.indexOf("---", 2) + 3;
+  const content = data.substring(contentStartIndex, data.length).trim();
 
-fs.readdir(path, (err, files) => {
-  if (err) console.log(err);
-  else {
-    files.forEach((file) => {
-      const post = getPost(file);
-      posts.push(post);
-    });
-  }
-});
+  return {
+    title: title,
+    content: content
+  };
+}
+
+let posts = [];
+
+const files = fs.readdirSync(path);
+files.forEach((file) => {
+  const post = getPost(file);
+  posts.push(post);
+})
 
 const getTitleLink = (title) => {
   return "#" + title.replace(/[.:]/g, "").replace(/\s/g, "-");
@@ -39,12 +33,13 @@ const getTitleLink = (title) => {
 
 const getTableOfContents = () => {
   let tableOfContents = "";
-  for (const post in posts) {
+  for (const post of posts) {
     const title = post.title;
     const link = getTitleLink(title);
     tableOfContents += `- [${title}](${link})`;
     tableOfContents += "\n";
   }
+  return tableOfContents;
 };
 
 const getContent = (post) => {
@@ -54,15 +49,17 @@ const getContent = (post) => {
   return content;
 };
 
+
 const generateReadme = () => {
   const fileName = "README.md";
 
   let content = "# 📝 Programming Guides and Learning Notes\n\n";
 
-  content += getTableOfContents();
+  const tableOfContents = getTableOfContents();
+  content += tableOfContents;
   content += "\n\n";
 
-  for (const post in posts) {
+  for (const post of posts) {
     content += getContent(post);
     content += "\n\n";
   }
