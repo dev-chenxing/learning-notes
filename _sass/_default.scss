@@ -28,6 +28,16 @@ p {
   margin-bottom: 0.8rem;
 }
 
+h3 {
+  font-size: 1.6rem;
+  font-family: "Oswald";
+  margin-bottom: 1rem;
+}
+
+li {
+  font-size: 1.4rem;
+}
+
 code {
   font-size: 1.1rem;
 }
@@ -134,40 +144,62 @@ strong {
   font-size: 2.4rem;
 }
 
-/* =Post teasers */
+/* =Post headers */
 
-.list-posts {
+.posts-accordion {
   list-style-type: none;
   padding: 0px;
-  font-family: monospace;
 }
 
-.post-teaser {
-  margin-bottom: 30px;
-  font-weight: 900;
-  & a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &:hover {
+.post {
+  &:hover .post-header {
     background-color: $steel;
   }
-  &:hover .post-teaser__title {
+  &:hover .post-header__title {
     color: white;
   }
-  &:hover .post-teaser__date {
+  &:hover .post-header__date {
     color: white;
   }
 }
 
-.post-teaser__title {
+.open {
+  background-color: $steel;
+
+  .post-header__title {
+    color: white;
+  }
+  .post-header__date {
+    color: white;
+  }
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: monospace;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.post-header__title {
   font-size: 1.1rem;
   color: $iron;
 }
 
-.post-teaser__date {
+.post-header__date {
   font-size: 1rem;
+  color: maroon;
+}
+
+.post-content {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  max-height: 0px;
+  overflow: clip;
+  transition: all 1s ease;
 }
 
 /* =Post page */
@@ -211,16 +243,16 @@ strong {
     font-size: 2rem;
   }
 
-  .post-teaser a {
+  .post-header {
     display: block;
   }
 
-  .post-teaser__title {
+  .post-header__title {
     font-size: 1.2rem;
     @include centered-block();
   }
 
-  .post-teaser__date {
+  .post-header__date {
     font-size: 1.1rem;
     margin-top: 10px;
     @include centered-block();
