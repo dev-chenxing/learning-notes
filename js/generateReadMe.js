@@ -1,10 +1,10 @@
 const fs = require("fs");
 
-path = "_posts";
+path = "_posts/";
 const posts = [];
 
 const getPost = (file) => {
-  fs.readFile(file, "utf8", (err, data) => {
+  fs.readFile(path + file, "utf8", (err, data) => {
     if (err) console.log(err);
     else {
       const titleStartIndex = data.indexOf("title:") + 7;
