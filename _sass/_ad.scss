@@ -1,12 +1,16 @@
-.ad {
-  text-align: center;
+@mixin double-border {
   border: 2px solid transparent;
   outline: 3px solid $steel;
+  box-shadow: inset 0 0 0 1px $steel;
+}
+
+.ad {
+  text-align: center;
   width: calc(100% - 32px);
   margin: 1.5rem auto;
   overflow: hidden;
   display: block;
-  box-shadow: inset 0 0 0 1px $steel;
+  @include double-border;
 }
 
 .ad__title {
