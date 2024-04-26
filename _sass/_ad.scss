@@ -1,0 +1,20 @@
+.ad {
+  text-align: center;
+  border: 2px solid transparent;
+  outline: 3px solid $steel;
+  width: calc(100% - 4px);
+  margin: 1.5rem auto;
+  overflow: hidden;
+  display: block;
+}
+
+.ad__title {
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  background: $steel;
+  color: $cloudy;
+  padding: 0.8rem 0.8rem 0.9rem;
+  transition: 0.2s ease;
+}
