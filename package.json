@@ -1,0 +1,13 @@
+{
+    "name": "learning-notes",
+    "version": "1.0.0",
+    "description": "Programming guides and learning notes, web scraping, frontend development, handheld gaming, etc",
+    "main": "js/generateReadMe.js",
+    "scripts": {
+        "generateReadMe": "node js/generateReadMe.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs"
+}
