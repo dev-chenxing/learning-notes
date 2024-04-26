@@ -1,0 +1,34 @@
+name: generateReadMe
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+    workflow_dispatch:
+
+permissions:
+    contents: write
+
+jobs:
+    runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [16.x]
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - run: npm install --if-present
+            - name: Run generateReadMe.js
+              run: npm start
+            - name: Commit and push if it changed
+              run: |-
+                  git config user.name "chen.xing"
+                  git config user.email "amaliegay@outlook.com"
+                  git add -A
+                  git commit -m "⚙️ $(curl -s https://whatthecommit.com/index.txt)" || exit 0
+                  git push
