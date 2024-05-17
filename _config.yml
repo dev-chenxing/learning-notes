@@ -2,13 +2,13 @@
 title: Learning Notes
 description: "Programming guides and learning notes, web scraping, frontend development, handheld gaming, etc."
 baseurl: "/learning-notes" # the subpath of your site, e.g. /blog/
-url: "https://amaliegay.github.io" # the base hostname & protocol for your site
-enforce_ssl: amaliegay.github.io
+url: "https://dev-chenxing.github.io" # the base hostname & protocol for your site
+enforce_ssl: dev-chenxing.github.io
 cover: "/img/social-preview.png"
 
 author:
-  fullname: amaliegay
-  github: amaliegay
+  fullname: chen.xing
+  github: dev-chenxing
 
 # Syntax highlighting
 highlightstyle: 'xcode'

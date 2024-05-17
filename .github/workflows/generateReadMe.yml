@@ -27,7 +27,7 @@ jobs:
             - name: Commit and push if it changed
               run: |-
                   git config user.name "chen.xing"
-                  git config user.email "amaliegay@outlook.com"
+                  git config user.email "chenxing.io@outlook.com"
                   git add -A
                   git commit -m "⚙️ $(curl -s https://whatthecommit.com/index.txt)" || exit 0
                   git push

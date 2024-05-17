@@ -2,4 +2,4 @@
 
 User-agent: *
 
-Sitemap: https://amaliegay.github.io/learning-notes/sitemap.xml
+Sitemap: https://dev-chenxing.github.io/learning-notes/sitemap.xml
