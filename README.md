@@ -6,6 +6,7 @@
 - [Beautiful Python Terminal Styling with Rich](#Beautiful-Python-Terminal-Styling-with-Rich)
 - [Scrapy - Python Web Scraping](#Scrapy---Python-Web-Scraping)
 - [Create Word Documents with Python: python-docx](#Create-Word-Documents-with-Python-python-docx)
+- [Commands in Linux](#Commands-in-Linux)
 
 
 ## Create React Project with Vite
@@ -224,6 +225,30 @@ blue_paragraph.runs[0].font.color.rgb = RGBColor(0x00, 0x00, 0xFF)
 # save the document to the output path
 output_path = f"{directory}{file_name}.docx"
 doc.save(output_path)
+```
+
+## Commands in Linux
+
+### pacman
+
+Installing Packages using the Pacman
+
+```bash
+sudo pacman -S arduino-ide
+```
+
+Upgrading packages
+
+```bash
+sudo pacman -Suy
+```
+
+### 7z
+
+Extract all files from an archive to the current directory with full paths
+
+```bash
+7z x arduino-ide_2.3.3_Linux_64bit.zip
 ```
 
 [⬆️ Back to the Top](#-programming-guides-and-learning-notes)
