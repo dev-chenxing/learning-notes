@@ -121,7 +121,7 @@ jobs:
       run: |
         if [ ! -e $PREFIX/bin/bundle ]; then
           export PATH="$PREFIX/bin:$PATH"
-          gem install bundler -v 2.4.2 $NO_DOCUMENT
+          gem install bundler $NO_DOCUMENT
         fi
 
     - run: echo "$PREFIX/bin" >> $GITHUB_PATH
