@@ -434,4 +434,14 @@ Extract all files from an archive to the current directory with full paths
 	- 7个月~2岁：社会性情感连接建立阶段，偏爱熟悉的人
 	- 2~3岁：伙伴关系发展阶段
 
+# 个案工作方法
+
+## 危机介入模式
+
+#### 危机的发展阶段
+1. 开始阶段：危机发生，习惯性解决，失败
+2. 解组阶段：情绪困扰，能力下降，平衡被打乱
+3. 恢复阶段：调整行为方式，寻找新的办法
+4. 重组阶段：重拾自信，恢复平衡
+
 [⬆️ Back to the Top](#-programming-guides-and-learning-notes)
